@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Questionaire</title>
+  <link rel="stylesheet" href="assets/reset.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+      <h1>The Coding Questionaire!</h1>
+
+    </header>
+    <section>
+      <h3 class="time" style="text-align:center;"></h3>
+      <div id="main"></div>
+      <div class="button">
+        <button id="timeStart">Start Timer</button>
+      </div>
+    </section>
+
+  <!-- blank question fields.  Generated with button in JavaScript -->
+    <section class="container">
+      <div class="title">
+      <h2>Question Number</h2>
+    </div>
+      <div class="question">
+        Questions will fill Here.
+      </div>
+      <ol class="list">
+        <li id="item1"><input type="radio" name="q1" value="c1">
+          Answers go here
+        </li>
+        <li id="item2"><input type="radio" name="q1" value="c2">
+          And here
+        </li>
+        <li id="item3"><input type="radio" name="q1" value="c2">
+          And here
+        </li>
+        <li id="item4"><input type="radio" name="q1" value="c2">
+          And here
+        </li>
+      </ol>
+      <!-- button specific CSS -->
+      <div class="button">
+        <button id="answer">NEXT</button>
+      </div>
+
+      <div class="score">
+        <p> Your Score is: <span id="score"></span></p>
+      </div>
+
+    </section>
+
+    <footer>
+      Website by Cody Berry.
+    </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
