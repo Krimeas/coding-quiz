@@ -1,4 +1,4 @@
-// variables:
+// Main variables:
 
 let qNumber = document.querySelector(".title");
 let buttonA = document.querySelector("#answer");
@@ -9,36 +9,45 @@ let secondItem = document.querySelector("#item2");
 let thirdItem = document.querySelector("#item3");
 let fourthItem = document.querySelector("#item4");
 
+// all quesitons and answers here.
 const questions = [{
   qNumber: "Question 1",
-  question: "How much chuck did the woodchuck chuck?",
-  firstItem: "7 woods",
-  secondItem: "12 woods",
-  thirdItem: "42 woods",
-  fourthItem: "2000 woods"
+  question: "What is a Data Structure?",
+  firstItem: "a storage format that defines the way data is stored.",
+  secondItem: "a collection of items stored at contiguous memory locations.",
+  thirdItem: "a linear data structure in which the elements are not necessarily stored in a contiguous manner.",
+  fourthItem: "a way of accessing, storing and retrieving data"
 }, {
   qNumber: "Question 2",
-  question: "How many seashells are down at the seashore?",
-  firstItem: "17 shells",
-  secondItem: "12 shells",
-  thirdItem: "42 shells",
-  fourthItem: "2000 shells"
+  question: "What is an Array?",
+  firstItem: "a storage format that defines the way data is stored.",
+  secondItem: "a collection of items stored at contiguous memory locations.",
+  thirdItem: "a linear data structure in which the elements are not necessarily stored in a contiguous manner.",
+  fourthItem: "a way of accessing, storing and retrieving data"
 }, {
   qNumber: "Question 3",
-  question: "How many floobers can flub?",
-  firstItem: "5 floobers",
-  secondItem: "8 floobers",
-  thirdItem: "3 floobers",
-  fourthItem: "1 million floobers"
+  question: "What is a Linked List?",
+  firstItem: "a storage format that defines the way data is stored.",
+  secondItem: "a collection of items stored at contiguous memory locations.",
+  thirdItem: "a linear data structure in which the elements are not necessarily stored in a contiguous manner.",
+  fourthItem: "a way of accessing, storing and retrieving data"
 }, {
   qNumber: "Question 4",
-  question: "How are you today?",
-  firstItem: "whale",
-  secondItem: "bat",
-  thirdItem: "slippy",
+  question: "What is LIFO?",
+  firstItem: "a storage format that defines the way data is stored.",
+  secondItem: "a collection of items stored at contiguous memory locations.",
+  thirdItem: "a linear data structure in which the elements are not necessarily stored in a contiguous manner.",
+  fourthItem: "a way of accessing, storing and retrieving data"
+}, {
+  qNumber: "Question 4",
+  question: "What is Recursion?",
+  firstItem: "used to store data in a manner that it can be retrieved very efficiently",
+  secondItem: "a function calling itself based on a terminating condition",
+  thirdItem: "a paradigm that provides concepts such as objects, classes, and inheritance",
   fourthItem: "stonks"
 }]
 
+// generation of random questions when clicking next button.  
 buttonA.addEventListener('click', function() {
   let random = Math.floor(Math.random () * questions.length)
 
@@ -76,28 +85,54 @@ buttonB.addEventListener('click', function() {
 setTime();
 })
 
+
 // Score Keeping Script.
 var scoreNumber = 0;
 var score = document.querySelector("#score");
 score.textContent = scoreNumber;
 
 function scoreKeeper() {
-  if (questions.item1) {
+  if (questions[0].firstItem) {
+    scoreNumber++;
+  }  else { secondsLeft - 10;}
+
+  if (questions[1].secondItem) {
     scoreNumber++
-  }
-  if (questions.item1) {
+  } else { secondsLeft - 10;}
+
+  if (questions[2].thirdItem) {
     scoreNumber++
-  }
-  if (questions.item1) {
+  } else { secondsLeft - 10;}
+
+  if (questions[3].fourthItem) {
     scoreNumber++
-  }
-  if (questions.item1) {
+  } else { secondsLeft - 10;}
+
+  if (questions[4].secondItem) {
     scoreNumber++
-  }
-  if (questions.item1) {
-    scoreNumber++
-  }
+  } else { secondsLeft - 10;}
+
 
 
 }
-
+scoreKeeper();
+  
+// Recent Scores score card for record keeping names.
+if (scoreNumber >=5){
+  prompt("Enter your name and Score here");
+  lItem1.append.textContent = " ";
+  }else if (scoreNumber >=4){
+    prompt("Enter your name and Score here");
+    lItem2.append.textContent = " ";
+  }else if (scoreNumber >=3){
+    prompt("Enter your name and Score here");
+    lItem3.append.textContent = " ";
+  }else if (scoreNumber >=2){
+    prompt("Enter your name and Score here");
+    lItem4.append.textContent = " ";
+  }else if (scoreNumber >=1){
+    prompt("Enter your name and Score here");
+    lItem5.append.textContent = " ";
+  } else {
+    
+  }
